@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <form action="{{ url_for('tts') }}" method="get">
+        <label for="text">Text to convert to speech:</label>
+        <input type="text" id="text" name="text" required>
+        <br>
+        <label for="language">Language:</label>
+        <select id="language" name="language" required>
+            <option value="en">English</option>
+            <option value="pl">Polish</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</head>
+
+<body>
+</body>
+
+</html>
